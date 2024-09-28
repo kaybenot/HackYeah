@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc5665bb1828a6841a1c1823e9fa7a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitSFX: {fileID: 8300000, guid: 87207c047c032a24d876c04fe9be0a12, type: 3}
   damage: 10
   selfDestructTime: 5
   radius: 5

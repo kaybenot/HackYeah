@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class ProjectileSingle : MonoBehaviour
 {
+    public AudioClip hitSFX;
     public float damage = 10f;
     public float selfDestructTime = 5f;
 
@@ -20,6 +21,11 @@ public class ProjectileSingle : MonoBehaviour
         if(enemyScript != null)
         {
             enemyScript.DealDamage(damage);
+            
+            if (hitSFX != null)
+            {
+                AudioSource.PlayClipAtPoint(hitSFX, transform.position);
+            }
         }
         else
         {

@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class ProjectileArea : MonoBehaviour
 {
+    public AudioClip hitSFX;
     public float damage = 10f;
     public float selfDestructTime = 5f;
     public float radius = 5f;
@@ -26,6 +27,11 @@ public class ProjectileArea : MonoBehaviour
                 if (enemyScript != null)
                 {
                     enemyScript.DealDamage(damage);
+
+                    if (hitSFX != null)
+                    {
+                        AudioSource.PlayClipAtPoint(hitSFX, hitCollider.transform.position);
+                    }
                 }
                 else
                 {

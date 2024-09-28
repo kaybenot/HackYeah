@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class ProjectileUtility : MonoBehaviour
 {
+    public AudioClip hitSFX;
     public float selfDestructTime = 5f;
 
     private void Start()
@@ -19,6 +20,11 @@ public class ProjectileUtility : MonoBehaviour
         if(enemyScript != null)
         {
             enemyScript.Slowdown();
+            
+            if (hitSFX != null)
+            {
+                AudioSource.PlayClipAtPoint(hitSFX, transform.position);
+            }
         }
         else
         {
