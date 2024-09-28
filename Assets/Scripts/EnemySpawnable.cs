@@ -4,7 +4,7 @@ using System;
 public class EnemySpawnable : MonoBehaviour
 {
     public event EventHandler OnDeath;
-
+ 
     [ContextMenu("Invoke Die")]
     public void Die()
     {
