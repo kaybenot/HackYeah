@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 public class Lemur : MonoBehaviour
 {
+    public AudioClip fireSFX;
     public float fireRate;
     public GameObject projectile;
     public float projectileSpeed;
@@ -55,5 +56,8 @@ public class Lemur : MonoBehaviour
 
         // Set the velocity of the projectile
         newProjectile.GetComponent<Rigidbody>().linearVelocity = direction * projectileSpeed;
+        
+        if (fireSFX != null)
+            AudioSource.PlayClipAtPoint(fireSFX, transform.position);
     }
 }

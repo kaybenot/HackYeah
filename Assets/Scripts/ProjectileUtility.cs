@@ -1,8 +1,11 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ProjectileUtility : MonoBehaviour
 {
+    public List<AudioClip> hitSFX;
     public float selfDestructTime = 5f;
 
     private void Start()
@@ -15,10 +18,15 @@ public class ProjectileUtility : MonoBehaviour
         if (!other.gameObject.CompareTag("Enemy"))
             return;
         
-        var enemyScript = other.gameObject.GetComponent<EnemySpawnerTest>();
+        var enemyScript = other.gameObject.GetComponent<EnemySpawnable>();
         if(enemyScript != null)
         {
-            enemyScript.Slowdown();
+            //enemyScript.Slowdown();
+            
+            if (hitSFX.Count > 0)
+            {
+                AudioSource.PlayClipAtPoint(hitSFX[Random.Range(0, hitSFX.Count)], transform.position);
+            }
         }
         else
         {
