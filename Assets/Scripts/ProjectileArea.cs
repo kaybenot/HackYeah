@@ -1,9 +1,11 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ProjectileArea : MonoBehaviour
 {
-    public AudioClip hitSFX;
+    public List<AudioClip> hitSFX;
     public float damage = 10f;
     public float selfDestructTime = 5f;
     public float radius = 5f;
@@ -23,14 +25,14 @@ public class ProjectileArea : MonoBehaviour
         {
             if (hitCollider.CompareTag("Enemy"))
             {
-                var enemyScript = hitCollider.GetComponent<EnemySpawnerTest>();
+                var enemyScript = hitCollider.GetComponent<EnemySpawnable>();
                 if (enemyScript != null)
                 {
-                    enemyScript.DealDamage(damage);
+                    //enemyScript.DealDamage(damage);
 
-                    if (hitSFX != null)
+                    if (hitSFX.Count > 0)
                     {
-                        AudioSource.PlayClipAtPoint(hitSFX, hitCollider.transform.position);
+                        AudioSource.PlayClipAtPoint(hitSFX[Random.Range(0, hitSFX.Count)], transform.position);
                     }
                 }
                 else

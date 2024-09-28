@@ -149,6 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49a13c597ef80814e84177b2b7ffe7e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSFX: {fileID: 8300000, guid: e65edace405be7e4d8d6bc0f3cd7daa5, type: 3}
+  hitSFX:
+  - {fileID: 8300000, guid: e65edace405be7e4d8d6bc0f3cd7daa5, type: 3}
+  - {fileID: 8300000, guid: e2f7915bee0205343a3fe988382ffafb, type: 3}
   damage: 50
   selfDestructTime: 5
