@@ -7,7 +7,7 @@ public class EnemySpawnerTest : MonoBehaviour
     public float speed = 5f;
     void Update()
     {
-        transform.Translate(Time.deltaTime * speed * Vector3.up);
+        //transform.Translate(Time.deltaTime * speed * Vector3.up);
     }
     
     public void Die()
@@ -20,5 +20,10 @@ public class EnemySpawnerTest : MonoBehaviour
     void InvokeDie()
     {
         Die();
+    }
+    
+    public void DealDamage(float damage)
+    {
+        Debug.Log("Dealt " + damage + " damage!");
     }
 }
