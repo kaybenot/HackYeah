@@ -153,7 +153,7 @@ GameObject:
   - component: {fileID: 8002348022127173698}
   - component: {fileID: 3857408602211878204}
   m_Layer: 0
-  m_Name: LemurTest
+  m_Name: LemurBanana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireSFX: {fileID: 8300000, guid: 883332d7208df8a4b8bc05a348fecfdc, type: 3}
   fireRate: 2
-  projectile: {fileID: 770452048522834391, guid: a57aa3f295bf2e941b57dd1e6a9f2afe, type: 3}
+  projectile: {fileID: 770452048522834391, guid: fae1538297fd5f848a1edcc11ebea5d2, type: 3}
   projectileSpeed: 3
   targettingColliders:
   - {fileID: 1677586842719941967}
