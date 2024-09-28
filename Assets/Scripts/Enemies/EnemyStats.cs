@@ -18,5 +18,10 @@ namespace Lemurs.Enemies
 		{
 			_settings = settings;
 		}
+
+		public void Damage(int damage)
+		{
+			health -= damage;
+		}
 	}
 }

@@ -18,7 +18,8 @@ namespace Lemurs.Enemies
 
 		private void Update()
 		{
-			
+			float dt = Time.deltaTime;
+			transform.Translate(0, dt * _settings.MovementSpeed, 0);
 		}
 	}
 }
