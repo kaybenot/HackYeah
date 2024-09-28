@@ -20,7 +20,7 @@ public class Spawner : MonoBehaviour
     private int _enemiesRemainingToSpawn;
     private int _enemiesRemainingAlive;
     private float _nextSpawnTime;
-
+     
     void Start()
     {
         StartCoroutine(SpawnWaves());
@@ -62,7 +62,7 @@ public class Spawner : MonoBehaviour
     {
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
         GameObject enemy = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
-        enemy.GetComponent<EnemySpawnerTest>().OnDeath += OnEnemyDeath;
+        enemy.GetComponent<EnemySpawnable>().OnDeath += OnEnemyDeath;
     }
 
     void OnEnemyDeath(object sender, EventArgs e)
