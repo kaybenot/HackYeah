@@ -61,7 +61,7 @@ public class Spawner : MonoBehaviour
     void SpawnEnemy()
     {
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        GameObject enemy = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        GameObject enemy = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation, transform);
         enemy.GetComponent<EnemySpawnable>().OnDeath += OnEnemyDeath;
     }
 

@@ -5,9 +5,10 @@ public class EnemySpawnerTest : MonoBehaviour
 {
     public event EventHandler OnDeath;
     public float speed = 5f;
+    public float health = 100f;
     void Update()
     {
-        //transform.Translate(Time.deltaTime * speed * Vector3.up);
+        transform.Translate(Time.deltaTime * speed * Vector3.up);
     }
     
     public void Die()
@@ -24,6 +25,10 @@ public class EnemySpawnerTest : MonoBehaviour
     
     public void DealDamage(float damage)
     {
-        Debug.Log("Dealt " + damage + " damage!");
+        health -= damage;
+        if(health <= 0)
+        {
+            Die();
+        }
     }
 }
