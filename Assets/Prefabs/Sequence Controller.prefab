@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 345a1ac1c32f50f4e85f266f7c723db6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sequenceSettings: {fileID: 11400000, guid: dcc85028aa37ba941a0f276dfcdaff82, type: 2}
+  towerList: {fileID: 11400000, guid: eebe393f2a761b543abe995c894f9ba9, type: 2}
 --- !u!114 &8816443868542885786
 MonoBehaviour:
   m_ObjectHideFlags: 0

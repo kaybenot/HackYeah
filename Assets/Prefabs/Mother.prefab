@@ -119,6 +119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5424409173997387758}
   - component: {fileID: 4280537217563042857}
+  - component: {fileID: 2166153592198256425}
   m_Layer: 0
   m_Name: Mother
   m_TagString: Untagged
@@ -157,6 +158,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TopScreenOffset: 0.15
   treeLayerMask:
+    serializedVersion: 2
+    m_Bits: 512
+--- !u!114 &2166153592198256425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106567355448457143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb291d1cd43f1df44a935f34c74c4d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treeMask:
     serializedVersion: 2
     m_Bits: 512
 --- !u!1 &8576935067058765187

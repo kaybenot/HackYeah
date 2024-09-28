@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bdf9f0278f220c4fafed08709e92626, type: 3}
-  m_Name: SequenceSettings
+  m_Script: {fileID: 11500000, guid: 9a4a443577dd69641b41d22576139af7, type: 3}
+  m_Name: TowerList
   m_EditorClassIdentifier: 
-  Sequences:
-  - ButtonList: 00000000010000000200000003000000
-    ID: 0
+  Towers:
+  - Sequence:
+      ButtonList: 00000000010000000200000003000000
+    Cost: 0
+    TowerPrefab: {fileID: 7538115606614290917, guid: 8b7b4632b384ffe40ab65f2bfcdeb470, type: 3}

@@ -14,5 +14,4 @@ public enum SequenceButton
 public class Sequence
 {
     public List<SequenceButton> ButtonList;
-    public int ID;
 }

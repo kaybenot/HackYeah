@@ -8,10 +8,10 @@ using UnityEngine.InputSystem;
 public class SequenceController : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private SequenceSettings sequenceSettings;
+    [SerializeField] private TowerList towerList;
 
     [CanBeNull] public static SequenceController Instance;
-    public Action<int> OnSequenceInvoked;
+    public Action<Tower> OnTryTowerSpawn;
     
     private List<SequenceButton> ButtonList = new();
 
@@ -62,15 +62,15 @@ public class SequenceController : MonoBehaviour
     {
         for (var j = 0; j < ButtonList.Count; j++)
         {
-            var seqs = new List<Sequence>(sequenceSettings.Sequences);
-            
+            var towers = new List<Tower>(towerList.Towers);
+
             for (var i = 0; i < ButtonList.Count; i++)
             {
-                seqs = seqs.Where(s => i < s.ButtonList.Count && i + j < ButtonList.Count && s.ButtonList[i] == ButtonList[i + j]).ToList();
-                if (seqs.Count == 1 && seqs[0].ButtonList.Count == i + 1)
+                towers = towers.Where(t => i < t.Sequence.ButtonList.Count && i + j < ButtonList.Count && t.Sequence.ButtonList[i] == ButtonList[i + j]).ToList();
+                if (towers.Count == 1 && towers[0].Sequence.ButtonList.Count == i + 1)
                 {
-                    OnSequenceInvoked?.Invoke(seqs[0].ID);
-                    Debug.Log($"Invoked sequence: {seqs[0].ID}");
+                    OnTryTowerSpawn?.Invoke(towers[0]);
+                    Debug.Log($"Trying to spawn tower: {towers[0].TowerPrefab.name}");
                     ButtonList.Clear();
                     return;
                 }
