@@ -22,6 +22,12 @@ public class EnemySpawnerTest : MonoBehaviour
     {
         Die();
     }
+
+    public void Slowdown()
+    {
+        var amount = 1.0f;
+        transform.position -= new Vector3(0, amount, 0);
+    }
     
     public void DealDamage(float damage)
     {
