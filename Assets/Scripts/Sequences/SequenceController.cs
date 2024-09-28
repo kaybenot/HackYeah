@@ -14,10 +14,18 @@ public class SequenceController : MonoBehaviour
     public Action<Tower> OnTryTowerSpawn;
     
     private List<SequenceButton> ButtonList = new();
+    private List<float> towerCooldowns = new();
+
+    public IEnumerable<float> GetTowerCooldowns => towerCooldowns;
 
     private void Awake()
     {
         Instance = this;
+
+        foreach (var tower in towerList.Towers)
+        {
+            towerCooldowns.Add(0f);
+        }
     }
 
     public void OnSequenceButton0(InputAction.CallbackContext context)
@@ -69,11 +77,35 @@ public class SequenceController : MonoBehaviour
                 towers = towers.Where(t => i < t.Sequence.ButtonList.Count && i + j < ButtonList.Count && t.Sequence.ButtonList[i] == ButtonList[i + j]).ToList();
                 if (towers.Count == 1 && towers[0].Sequence.ButtonList.Count == i + 1)
                 {
-                    OnTryTowerSpawn?.Invoke(towers[0]);
                     Debug.Log($"Trying to spawn tower: {towers[0].TowerPrefab.name}");
+                    var index = -1;
+                    for (var k = 0; k < towerList.Towers.Count; k++)
+                    {
+                        if (towerList.Towers[k].TowerPrefab == towers[0].TowerPrefab)
+                        {
+                            index = k;
+                        }
+                    }
+
+                    if (index >= 0 && towerCooldowns[index] <= 0f)
+                    {
+                        towerCooldowns[index] = towers[0].SpawnCooldown;
+                        OnTryTowerSpawn?.Invoke(towers[0]);
+                    }
                     ButtonList.Clear();
                     return;
                 }
+            }
+        }
+    }
+
+    private void Update()
+    {
+        for (var i = 0; i < towerCooldowns.Count; i++)
+        {
+            if (towerCooldowns[i] > 0f)
+            {
+                towerCooldowns[i] -= Time.deltaTime;
             }
         }
     }
