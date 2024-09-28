@@ -107,7 +107,7 @@ MonoBehaviour:
       Radius: 2
       Height: 5
     Center:
-      Radius: 4
+      Radius: 7
       Height: 0
     Bottom:
       Radius: 2.5
