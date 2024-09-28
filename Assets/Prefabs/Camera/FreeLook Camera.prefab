@@ -107,7 +107,7 @@ MonoBehaviour:
       Radius: 2
       Height: 5
     Center:
-      Radius: 7
+      Radius: 20
       Height: 0
     Bottom:
       Radius: 2.5
@@ -187,8 +187,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraSpeedX: 100
   cameraSpeedY: 2
-  maxY: 4
-  minY: -4
+  maxY: 32
+  minY: 5
   orbitalFollow: {fileID: 2900140133982833905}
   hardLookAt: {fileID: 1634455202519187309}
 --- !u!114 &8861721519193340512
@@ -362,6 +362,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2e30636e-af48-4844-a58e-90e27112efa4
+    m_ActionName: 'Player/SeqButton0[/Keyboard/leftArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 75108248-334f-449d-b832-bace868d1f23
+    m_ActionName: 'Player/SeqButton1[/Keyboard/upArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 4306a445-462d-4037-a0da-79ac5b8c5592
+    m_ActionName: 'Player/SeqButton2[/Keyboard/rightArrow]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 14407a3e-2d97-49ab-9ae3-fe82248210bf
+    m_ActionName: 'Player/SeqButton3[/Keyboard/downArrow]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
