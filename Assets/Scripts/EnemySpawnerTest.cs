@@ -10,7 +10,7 @@ public class EnemySpawnerTest : MonoBehaviour
         transform.Translate(Time.deltaTime * speed * Vector3.up);
     }
     
-    void Die()
+    public void Die()
     {
         OnDeath?.Invoke(this, EventArgs.Empty);
         Destroy(gameObject);
