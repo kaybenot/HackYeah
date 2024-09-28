@@ -341,11 +341,104 @@ PrefabInstance:
       propertyPath: Target.TrackingTarget
       value: 
       objectReference: {fileID: 389284468}
+    - target: {fileID: 9219307030116863679, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219307030116863679, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
+      propertyPath: m_ActionEvents.Array.data[19].m_ActionId
+      value: 2e30636e-af48-4844-a58e-90e27112efa4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219307030116863679, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
+      propertyPath: m_ActionEvents.Array.data[20].m_ActionId
+      value: 75108248-334f-449d-b832-bace868d1f23
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219307030116863679, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
+      propertyPath: m_ActionEvents.Array.data[21].m_ActionId
+      value: 4306a445-462d-4037-a0da-79ac5b8c5592
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219307030116863679, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_ActionId
+      value: 14407a3e-2d97-49ab-9ae3-fe82248210bf
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219307030116863679, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
+      propertyPath: m_ActionEvents.Array.data[19].m_ActionName
+      value: 'Player/SeqButton0[/Keyboard/leftArrow]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219307030116863679, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
+      propertyPath: m_ActionEvents.Array.data[20].m_ActionName
+      value: 'Player/SeqButton1[/Keyboard/upArrow]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219307030116863679, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
+      propertyPath: m_ActionEvents.Array.data[21].m_ActionName
+      value: 'Player/SeqButton2[/Keyboard/rightArrow]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219307030116863679, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
+      propertyPath: m_ActionEvents.Array.data[22].m_ActionName
+      value: 'Player/SeqButton3[/Keyboard/downArrow]'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
+--- !u!1001 &8083967818860462217
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 577959240399180060, guid: 67a5a73a835f7444288ba147e22de741, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577959240399180060, guid: 67a5a73a835f7444288ba147e22de741, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577959240399180060, guid: 67a5a73a835f7444288ba147e22de741, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577959240399180060, guid: 67a5a73a835f7444288ba147e22de741, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577959240399180060, guid: 67a5a73a835f7444288ba147e22de741, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577959240399180060, guid: 67a5a73a835f7444288ba147e22de741, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577959240399180060, guid: 67a5a73a835f7444288ba147e22de741, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577959240399180060, guid: 67a5a73a835f7444288ba147e22de741, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577959240399180060, guid: 67a5a73a835f7444288ba147e22de741, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 577959240399180060, guid: 67a5a73a835f7444288ba147e22de741, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 977708710932150035, guid: 67a5a73a835f7444288ba147e22de741, type: 3}
+      propertyPath: m_Name
+      value: Sequence Controller
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 67a5a73a835f7444288ba147e22de741, type: 3}
 --- !u!1001 &9150796394301827667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -411,3 +504,4 @@ SceneRoots:
   - {fileID: 389284468}
   - {fileID: 5359225152821885264}
   - {fileID: 9150796394301827667}
+  - {fileID: 8083967818860462217}
