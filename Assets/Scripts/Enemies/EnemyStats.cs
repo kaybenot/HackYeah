@@ -17,6 +17,7 @@ namespace Lemurs.Enemies
 		public void Init(IEnemyStatsSettings settings)
 		{
 			_settings = settings;
+			health = _settings.MaxHealth;
 		}
 
 		public void Damage(int damage)

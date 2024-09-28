@@ -56,6 +56,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Normal Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6109146305112643576, guid: 8e1f1eeeb3713694c9519b5caa04d200, type: 3}
+      propertyPath: changeTargetDistance
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6109146305112643576, guid: 8e1f1eeeb3713694c9519b5caa04d200, type: 3}
+      propertyPath: initialTargetOffset.y
+      value: -0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342396612835370541, guid: 8e1f1eeeb3713694c9519b5caa04d200, type: 3}
+      propertyPath: initialTargetOffset.y
+      value: -0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
