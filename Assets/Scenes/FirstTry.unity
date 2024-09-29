@@ -42026,7 +42026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6554220078188410201, guid: 593d31663c8e86040bac04a21f14592e, type: 3}
       propertyPath: spawnRadius
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
