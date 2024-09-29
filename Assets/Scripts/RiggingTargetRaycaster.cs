@@ -16,13 +16,18 @@ public class RiggingTargetRaycaster : MonoBehaviour
 
 	[Header("Movement")]
 	[SerializeField]
+	private bool autoCreateTargets = true;
+	[SerializeField]
 	private float changeTargetDistance = 0.5f;
 	[SerializeField]
 	private float movementSpeed = 1;
 	[SerializeField]
 	private bool useDirection;
 
+	[SerializeField]
 	private Transform target, hint;
+
+
 	private Ray ray;
 	private RaycastHit hitInfo;
 
@@ -32,10 +37,13 @@ public class RiggingTargetRaycaster : MonoBehaviour
 
 	private void OnEnable()
 	{
-		target = new GameObject("Target").transform;
-		hint = new GameObject("Hint").transform;
-		hint.parent = target;
-		hint.localPosition = -0.1f * Vector3.up;
+		if (autoCreateTargets)
+		{
+			target = new GameObject("Target").transform;
+			hint = new GameObject("Hint").transform;
+			hint.parent = target;
+			hint.localPosition = -0.1f * Vector3.up;
+		}
 
 		constraint.data.target = target;
 		if (useDirection)
@@ -70,10 +78,13 @@ public class RiggingTargetRaycaster : MonoBehaviour
 
 	private void OnDisable()
 	{
-		constraint.data.target = null;
-		constraint.data.hint = null;
-		if (target)
-			Destroy(target.gameObject);
+		if (autoCreateTargets)
+		{
+			constraint.data.target = null;
+			constraint.data.hint = null;
+			if (target)
+				Destroy(target.gameObject);
+		}
 	}
 
 	private void OnValidate()
