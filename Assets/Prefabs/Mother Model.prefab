@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8496730187126936511}
   - component: {fileID: 6615161687021823700}
   - component: {fileID: 3637290750801717946}
+  - component: {fileID: 6410891991043300517}
   m_Layer: 0
   m_Name: Mother Model
   m_TagString: Untagged
@@ -73,6 +74,27 @@ MonoBehaviour:
   - m_Rig: {fileID: 8527007071964132138}
     m_Active: 1
   m_Effectors: []
+--- !u!65 &6410891991043300517
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5345850203284678843}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5, y: 1.3, z: 0.5}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!1001 &3250441202577874298
 PrefabInstance:
   m_ObjectHideFlags: 0

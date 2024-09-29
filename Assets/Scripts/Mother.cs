@@ -83,6 +83,7 @@ public class Mother : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             OnMotherHit?.Invoke();
+            GameState.Instance.GameLost();
         }
     }
 }
