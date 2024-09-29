@@ -185,8 +185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7dc001f06e370a488e3c8e39189757f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraSpeedX: 50
-  cameraSpeedY: 10
+  cameraSpeedX: 15
+  cameraSpeedY: 4
   maxY: 82
   minY: 4
   orbitalFollow: {fileID: 2900140133982833905}

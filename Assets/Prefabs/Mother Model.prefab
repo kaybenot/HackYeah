@@ -927,15 +927,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 377351275124039862, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: movementSpeed
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 377351275124039862, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
-      propertyPath: autoCreateTargets
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 377351275124039862, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: detectionRange
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 377351275124039862, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
+      propertyPath: autoCreateTargets
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1700786871203604169, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: m_Name
@@ -951,15 +951,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2577741468087860951, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: movementSpeed
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 2577741468087860951, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
-      propertyPath: autoCreateTargets
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2577741468087860951, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: detectionRange
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2577741468087860951, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
+      propertyPath: autoCreateTargets
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2645972434685139101, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1023,15 +1023,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3389326072338960130, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: movementSpeed
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 3389326072338960130, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
-      propertyPath: autoCreateTargets
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3389326072338960130, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: detectionRange
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3389326072338960130, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
+      propertyPath: autoCreateTargets
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3453716114091175731, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1083,15 +1083,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7102947753976013829, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: movementSpeed
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 7102947753976013829, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
-      propertyPath: autoCreateTargets
-      value: 0
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7102947753976013829, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: detectionRange
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7102947753976013829, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
+      propertyPath: autoCreateTargets
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7345131871466914383, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: m_LocalPosition.x
