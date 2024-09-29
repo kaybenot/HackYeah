@@ -12,7 +12,7 @@ public struct Wave
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject enemyPrefab;
+    public EnemySpawnable enemyPrefab;
     public Wave[] waves;
     public Transform[] spawnPoints;
     public float timeBetweenWaves = 2f;
@@ -61,8 +61,8 @@ public class Spawner : MonoBehaviour
     void SpawnEnemy()
     {
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        GameObject enemy = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation, transform);
-        enemy.GetComponent<EnemySpawnable>().OnDeath += OnEnemyDeath;
+		var enemy = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        enemy.OnDeath += OnEnemyDeath;
     }
 
     void OnEnemyDeath(object sender, EventArgs e)
