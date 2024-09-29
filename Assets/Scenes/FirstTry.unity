@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2480621218477315117, guid: 999568454ef61774e8a56c5f484f985e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20
+      value: -16
       objectReference: {fileID: 0}
     - target: {fileID: 2480621218477315117, guid: 999568454ef61774e8a56c5f484f985e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -169,6 +169,14 @@ PrefabInstance:
     - target: {fileID: 2480621218477315117, guid: 999568454ef61774e8a56c5f484f985e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087091175104341897, guid: 999568454ef61774e8a56c5f484f985e, type: 3}
+      propertyPath: field of view
+      value: 60.000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 4087091175104341897, guid: 999568454ef61774e8a56c5f484f985e, type: 3}
+      propertyPath: far clip plane
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -318,7 +326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2012787520805777986, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20
+      value: -16
       objectReference: {fileID: 0}
     - target: {fileID: 2012787520805777986, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
       propertyPath: m_LocalRotation.w
@@ -347,6 +355,18 @@ PrefabInstance:
     - target: {fileID: 2012787520805777986, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900140133982833905, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
+      propertyPath: Orbits.Top.Height
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900140133982833905, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
+      propertyPath: Orbits.Bottom.Height
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900140133982833905, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
+      propertyPath: Orbits.Center.Radius
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8840298549072629591, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
       propertyPath: Target.TrackingTarget
@@ -429,11 +449,15 @@ PrefabInstance:
     - target: {fileID: 4259481488244199258, guid: 7eecd289a7106cc44a55ee66e1135f22, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: c81e7b66535bc0a478502c8fe90124da, type: 2}
+      objectReference: {fileID: 2100000, guid: 8589a7035bb59d34885ca6ee856b9eab, type: 2}
     - target: {fileID: 4259481488244199258, guid: 7eecd289a7106cc44a55ee66e1135f22, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
       objectReference: {fileID: 2100000, guid: c81e7b66535bc0a478502c8fe90124da, type: 2}
+    - target: {fileID: 4280537217563042857, guid: 7eecd289a7106cc44a55ee66e1135f22, type: 3}
+      propertyPath: TopScreenOffset
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5424409173997387758, guid: 7eecd289a7106cc44a55ee66e1135f22, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

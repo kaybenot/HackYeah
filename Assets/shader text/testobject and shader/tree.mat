@@ -46,7 +46,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _shadowtextur:
-        m_Texture: {fileID: 2800000, guid: ff4ff0f7ab7e84f45a2cedd7cef1dc50, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -65,11 +65,11 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _shadowstep: 0.16
+    - _shadowstep: 0.24
     m_Colors:
-    - _maincolor: {r: 0.2905661, g: 0.1848345, b: 0.117871135, a: 0}
-    - _shadow_textur_tilling: {r: 3.87, g: -3.35, b: 0, a: 0}
-    - _shadowcolor: {r: 0.21509439, g: 0.1428117, b: 0.11322893, a: 1}
-    - _shadowpatterncolor: {r: 0, g: 0, b: 0, a: 0}
+    - _maincolor: {r: 0.554717, g: 0.4497185, b: 0.3757423, a: 0}
+    - _shadow_textur_tilling: {r: 135.2, g: 97.9, b: 0, a: 0}
+    - _shadowcolor: {r: 0.5849056, g: 0.24707103, b: 0.14898533, a: 1}
+    - _shadowpatterncolor: {r: 0.014504716, g: 0.0073070927, b: 0.0073070927, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

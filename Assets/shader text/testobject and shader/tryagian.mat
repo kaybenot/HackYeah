@@ -38,11 +38,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _ColorThreadshold: 0.46
-    - _NormalThreadshold: 0.48
+    - _ColorThreadshold: 0.31
+    - _NormalThreadshold: 0.7
     - _OVERLAY: 1
     - _divide: -0.12
-    - _dzielenie: 0.002
+    - _dzielenie: -2.26
     - _noise: -3.2
     m_Colors:
     - _outlinecolor: {r: 0, g: 0, b: 0, a: 0}
