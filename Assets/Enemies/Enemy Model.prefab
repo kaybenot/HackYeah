@@ -35,41 +35,6 @@ Transform:
   - {fileID: 6796573444053063069}
   m_Father: {fileID: 6336557562487099016}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4531557675503650811
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 474896210840800769}
-  m_Layer: 0
-  m_Name: Limb Target Raycasters
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &474896210840800769
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4531557675503650811}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 991173442814884271}
-  - {fileID: 3114307551973124046}
-  - {fileID: 5518630910519780221}
-  - {fileID: 75979351767140474}
-  m_Father: {fileID: 6336557562487099016}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4835607368102350693
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,71 +320,83 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1001 &2280970975581624510
+--- !u!1001 &2988484800511877426
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 474896210840800769}
+    m_TransformParent: {fileID: 6336557562487099016}
     m_Modifications:
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
+    - target: {fileID: 377351275124039862, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
+      propertyPath: constraint
+      value: 
+      objectReference: {fileID: 7477910226526909336}
+    - target: {fileID: 1700786871203604169, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
+      propertyPath: m_Name
+      value: Limb Target Raycasters
+      objectReference: {fileID: 0}
+    - target: {fileID: 2577741468087860951, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
+      propertyPath: constraint
+      value: 
+      objectReference: {fileID: 2718553838837967191}
+    - target: {fileID: 3389326072338960130, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
+      propertyPath: constraint
+      value: 
+      objectReference: {fileID: 206192560787157763}
+    - target: {fileID: 3453716114091175731, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.2
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
+    - target: {fileID: 3453716114091175731, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
+    - target: {fileID: 3453716114091175731, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
+    - target: {fileID: 3453716114091175731, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
+    - target: {fileID: 3453716114091175731, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
+    - target: {fileID: 3453716114091175731, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
+    - target: {fileID: 3453716114091175731, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
+    - target: {fileID: 3453716114091175731, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
+    - target: {fileID: 3453716114091175731, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
+    - target: {fileID: 3453716114091175731, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6074270999930002825, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
+    - target: {fileID: 7102947753976013829, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: constraint
       value: 
       objectReference: {fileID: 1002461612978207556}
-    - target: {fileID: 6665440352728836334, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_Name
-      value: 'Left Leg Target Raycaster '
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
---- !u!4 &5518630910519780221 stripped
+  m_SourcePrefab: {fileID: 100100000, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
+--- !u!4 &474896210840800769 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-  m_PrefabInstance: {fileID: 2280970975581624510}
+  m_CorrespondingSourceObject: {fileID: 3453716114091175731, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
+  m_PrefabInstance: {fileID: 2988484800511877426}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3508034774678489710
 PrefabInstance:
@@ -505,150 +482,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeda7bfbf984f2a4da5ab4b8967b115d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &5925699479794168761
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 474896210840800769}
-    m_Modifications:
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6074270999930002825, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: constraint
-      value: 
-      objectReference: {fileID: 206192560787157763}
-    - target: {fileID: 6074270999930002825, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: initialTargetOffset.y
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665440352728836334, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_Name
-      value: Right Leg Target Raycaster
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
---- !u!4 &75979351767140474 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-  m_PrefabInstance: {fileID: 5925699479794168761}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &6841218970163954284
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 474896210840800769}
-    m_Modifications:
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6074270999930002825, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: constraint
-      value: 
-      objectReference: {fileID: 2718553838837967191}
-    - target: {fileID: 6074270999930002825, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: useDirection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6074270999930002825, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: initialTargetOffset.y
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665440352728836334, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_Name
-      value: Left Arm Target Raycaster
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
---- !u!4 &991173442814884271 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-  m_PrefabInstance: {fileID: 6841218970163954284}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7206297507475583283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -900,74 +733,4 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 857680859440963432, guid: a153132bd1368724c84b67c53cc51931, type: 3}
   m_PrefabInstance: {fileID: 8274215195396427937}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &8649585989497248781
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 474896210840800769}
-    m_Modifications:
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.16
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6074270999930002825, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: constraint
-      value: 
-      objectReference: {fileID: 7477910226526909336}
-    - target: {fileID: 6074270999930002825, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: useDirection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665440352728836334, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-      propertyPath: m_Name
-      value: Right Arm Target Raycaster
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
---- !u!4 &3114307551973124046 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5994782133053389763, guid: 2140bba1b90053b4a8a6212a7e49d79f, type: 3}
-  m_PrefabInstance: {fileID: 8649585989497248781}
   m_PrefabAsset: {fileID: 0}

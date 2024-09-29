@@ -10,5 +10,11 @@ namespace Lemurs.Enemies
 
 		[field: SerializeField]
 		public int MaxHealth { get; set; }
+
+		[field: SerializeField]
+		public float DistanceFromTree { get; set; }
+
+		[field: SerializeField]
+		public LayerMask TreeLayers { get; set; }
 	}
 }
