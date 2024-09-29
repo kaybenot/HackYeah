@@ -107,7 +107,7 @@ MonoBehaviour:
       Radius: 2
       Height: 5
     Center:
-      Radius: 20
+      Radius: 16
       Height: 0
     Bottom:
       Radius: 2.5
@@ -185,9 +185,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7dc001f06e370a488e3c8e39189757f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraSpeedX: 50
-  cameraSpeedY: 10
-  maxY: 82
+  cameraSpeedX: 15
+  cameraSpeedY: 4
+  maxY: 65.5
   minY: 4
   orbitalFollow: {fileID: 2900140133982833905}
   hardLookAt: {fileID: 1634455202519187309}
