@@ -10,9 +10,14 @@ public class Lemur : MonoBehaviour
     public GameObject projectile;
     public float projectileSpeed;
     //public Transform firePoint;
-    private float _lastFireTime;
     public BoxCollider[] targettingColliders;
-    
+    private float _lastFireTime;
+    private Animator animator;
+
+    void Awake()
+    {
+        animator = GetComponentInChildren<Animator>();
+    }
     void Update()
     {
         if(_lastFireTime + fireRate < Time.time)
@@ -56,6 +61,11 @@ public class Lemur : MonoBehaviour
 
         // Set the velocity of the projectile
         newProjectile.GetComponent<Rigidbody>().linearVelocity = direction * projectileSpeed;
+        
+        if (animator != null)
+        {
+            animator.SetTrigger("Fire");
+        }
         
         if (fireSFX != null)
             AudioSource.PlayClipAtPoint(fireSFX, transform.position);

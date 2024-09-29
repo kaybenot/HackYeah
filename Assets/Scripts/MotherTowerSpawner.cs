@@ -21,16 +21,26 @@ public class MotherTowerSpawner : MonoBehaviour
     private void SpawnTower(Tower tower)
     {
         var position = GetSpawnPosition();
-        var normal = GetTowerNormalAtPosition(position);
+        if (position == null)
+            return;
+        
+        var normal = GetTowerNormalAtPosition(transform.position);
         if (normal == null)
             return;
 
-        Instantiate(tower.TowerPrefab, position, Quaternion.LookRotation(normal.Value));
+        Instantiate(tower.TowerPrefab, position.Value, Quaternion.LookRotation(normal.Value));
     }
 
-    private Vector3 GetSpawnPosition()
+    private Vector3? GetSpawnPosition()
     {
-        // TODO: More accurate way of spawning here
+        if (Camera.main == null)
+            return null;
+        
+        if (Physics.Raycast(transform.position, Camera.main.transform.forward, out var hit, float.PositiveInfinity, treeMask))
+        {
+            return hit.point;
+        }
+        
         return transform.position;
     }
 
