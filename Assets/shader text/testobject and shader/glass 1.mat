@@ -23,7 +23,7 @@ Material:
   disabledShaderPasses:
   - DepthOnly
   - MOTIONVECTORS
-  m_LockedProperties: _CastShadows
+  m_LockedProperties: _CastShadows _Cull
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
