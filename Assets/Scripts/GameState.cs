@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameState
 {
@@ -12,12 +13,12 @@ public class GameState
     public void GameWon()
     {
         Debug.Log("GAME WON!");
-        // TODO: Present screen etc.
+        SceneManager.LoadScene("WinScream");
     }
 
     public void GameLost()
     {
         Debug.Log("GAME LOST!");
-        // TODO: Present screen etc.
+        SceneManager.LoadScene("LoseScreen");
     }
 }
