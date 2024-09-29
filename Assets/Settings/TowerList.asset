@@ -18,7 +18,7 @@ MonoBehaviour:
     TowerPrefab: {fileID: 7538115606614290917, guid: 54385864c1f1f9741aad39555ff9b140, type: 3}
     SpawnCooldown: 3
   - Sequence:
-      ButtonList: 01000000010000000200000003000000
+      ButtonList: 02000000030000000200000003000000
     TowerPrefab: {fileID: 7538115606614290917, guid: e88afb4966a648c42b5721cdfecd6a74, type: 3}
     SpawnCooldown: 3
   - Sequence:
