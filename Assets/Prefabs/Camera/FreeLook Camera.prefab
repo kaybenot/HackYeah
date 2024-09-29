@@ -187,8 +187,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraSpeedX: 15
   cameraSpeedY: 4
-  maxY: 65.5
-  minY: 4
+  maxY: 16
+  minY: -46
   orbitalFollow: {fileID: 2900140133982833905}
   hardLookAt: {fileID: 1634455202519187309}
 --- !u!114 &8861721519193340512

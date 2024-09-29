@@ -145,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2480621218477315117, guid: 999568454ef61774e8a56c5f484f985e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2480621218477315117, guid: 999568454ef61774e8a56c5f484f985e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -25221,7 +25221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2012787520805777986, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 2012787520805777986, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
       propertyPath: m_LocalPosition.z
@@ -25255,10 +25255,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4684281557619834008, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
+      propertyPath: maxY
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4684281557619834008, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
+      propertyPath: minY
+      value: -46
+      objectReference: {fileID: 0}
     - target: {fileID: 8840298549072629591, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
       propertyPath: Target.TrackingTarget
       value: 
-      objectReference: {fileID: 543450653141034632}
+      objectReference: {fileID: 1084890545}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31006,6 +31014,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 49200eaf18761a04388242fa9a276303, type: 3}
   m_PrefabInstance: {fileID: 773128176}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1084890544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1084890545}
+  m_Layer: 9
+  m_Name: Camera Lookat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1084890545
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084890544}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 50, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 543450653141034632}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1349679119
 GameObject:
   m_ObjectHideFlags: 0
@@ -31705,12 +31744,16 @@ PrefabInstance:
       value: BaobabUpper
       objectReference: {fileID: 0}
     - target: {fileID: 4845084597919020329, guid: 593d31663c8e86040bac04a21f14592e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4845084597919020329, guid: 593d31663c8e86040bac04a21f14592e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4845084597919020329, guid: 593d31663c8e86040bac04a21f14592e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 35.4
+      value: 71.08
       objectReference: {fileID: 0}
     - target: {fileID: 4845084597919020329, guid: 593d31663c8e86040bac04a21f14592e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -41904,7 +41947,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4845084597919020329, guid: 593d31663c8e86040bac04a21f14592e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1084890545}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 593d31663c8e86040bac04a21f14592e, type: 3}
 --- !u!1001 &5169107198052588789
