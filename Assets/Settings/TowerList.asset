@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a4a443577dd69641b41d22576139af7, type: 3}
+  m_Name: TowerList
+  m_EditorClassIdentifier: 
+  Towers:
+  - Sequence:
+      ButtonList: 00000000010000000200000003000000
+    TowerPrefab: {fileID: 7538115606614290917, guid: 8b7b4632b384ffe40ab65f2bfcdeb470, type: 3}
+    SpawnCooldown: 3
+  - Sequence:
+      ButtonList: 01000000010000000200000003000000
+    TowerPrefab: {fileID: 7538115606614290917, guid: ec11abdc9f4eb594f981954c6121f824, type: 3}
+    SpawnCooldown: 3
+  - Sequence:
+      ButtonList: 02000000010000000200000003000000
+    TowerPrefab: {fileID: 7538115606614290917, guid: 987d2622b47ed3e4ca986e7a914430aa, type: 3}
+    SpawnCooldown: 3
+  - Sequence:
+      ButtonList: 03000000000000000200000003000000
+    TowerPrefab: {fileID: 7538115606614290917, guid: 54385864c1f1f9741aad39555ff9b140, type: 3}
+    SpawnCooldown: 3
