@@ -106,16 +106,8 @@ MonoBehaviour:
     spawnInterval: 1.2
   - enemyCount: 24
     spawnInterval: 1
-  spawnPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   timeBetweenWaves: 2
+  spawnRadius: 13
 --- !u!64 &7711024047099877210
 MeshCollider:
   m_ObjectHideFlags: 0
