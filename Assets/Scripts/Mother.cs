@@ -6,6 +6,8 @@ public class Mother : MonoBehaviour
     [Header("Settings")]
     [SerializeField, Range(0f, 1f)] private float TopScreenOffset = 0.1f;
     [SerializeField] private LayerMask treeLayerMask;
+    [SerializeField] private float distanceFromTree;
+    [SerializeField, Range(0f, 1f)] private float movementSmoothingValue = 0.5f;
 
     public Action OnMotherHit;
     
@@ -30,12 +32,12 @@ public class Mother : MonoBehaviour
     private void MoveTo(Vector3 pos, Vector3 normal)
     {
         // TODO: Move anim
-        Teleport(pos, normal);
+        Teleport(pos, normal, movementSmoothingValue);
     }
 
-    private void Teleport(Vector3 pos, Vector3 normal)
+    private void Teleport(Vector3 pos, Vector3 normal, float smoothing = 1)
     {
-        transform.position = pos + normal * 0.5f;
+        transform.position = Vector3.Lerp(transform.position, pos + normal * distanceFromTree, smoothing); 
     }
 
     private (Vector3 point, Vector3 normal)? GetMotherTarget()

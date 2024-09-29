@@ -7,7 +7,7 @@ namespace Lemurs.Enemies
 		int MaxHealth { get; }
 	}
 
-	public class EnemyStats : MonoBehaviour
+	public class EnemyBattler : MonoBehaviour
 	{
 		[SerializeField]
 		private int health;
@@ -17,12 +17,17 @@ namespace Lemurs.Enemies
 		public void Init(IEnemyStatsSettings settings)
 		{
 			_settings = settings;
-			health = _settings.MaxHealth;
-		}
+			ResetHealth();
+        }
 
 		public void Damage(int damage)
 		{
 			health -= damage;
 		}
-	}
+
+		public void ResetHealth()
+		{
+            health = _settings.MaxHealth;
+        }
+    }
 }

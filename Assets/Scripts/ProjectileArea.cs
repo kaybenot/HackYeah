@@ -9,7 +9,8 @@ public class ProjectileArea : MonoBehaviour
     public float damage = 10f;
     public float selfDestructTime = 5f;
     public float radius = 5f;
-
+    public GameObject explosionFx;
+    
     private void Start()
     {
         Destroy(gameObject, selfDestructTime);
@@ -29,11 +30,6 @@ public class ProjectileArea : MonoBehaviour
                 if (enemyScript != null)
                 {
                     //enemyScript.DealDamage(damage);
-
-                    if (hitSFX.Count > 0)
-                    {
-                        AudioSource.PlayClipAtPoint(hitSFX[Random.Range(0, hitSFX.Count)], transform.position);
-                    }
                 }
                 else
                 {
@@ -42,6 +38,14 @@ public class ProjectileArea : MonoBehaviour
             }
         }
 
+        if (hitSFX.Count > 0)
+        {
+            AudioSource.PlayClipAtPoint(hitSFX[Random.Range(0, hitSFX.Count)], transform.position);
+        }
+        
+        var obj = Instantiate(explosionFx, transform.position, Quaternion.identity);
+        Destroy(obj, 5f);
+        
         Destroy(gameObject);
     }
 

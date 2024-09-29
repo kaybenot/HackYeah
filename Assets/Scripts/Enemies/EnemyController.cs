@@ -3,6 +3,7 @@ using UnityEngine.Animations.Rigging;
 
 namespace Lemurs.Enemies
 {
+	[SelectionBase]
 	public class EnemyController : MonoBehaviour
 	{
 		[SerializeField]
@@ -10,7 +11,7 @@ namespace Lemurs.Enemies
 		[SerializeField]
 		private EnemyMovement movement;
 		[SerializeField]
-		private EnemyStats stats;
+		private EnemyBattler stats;
 		[SerializeField]
 		private RigBuilder rigBuilder;
 		[SerializeField]
