@@ -5,6 +5,6 @@ using UnityEngine;
 public class Tower
 {
     public Sequence Sequence;
-    public int Cost;
     public GameObject TowerPrefab;
+    public float SpawnCooldown;
 }
