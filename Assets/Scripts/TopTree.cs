@@ -8,6 +8,7 @@ public class TopTree : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
+            PlayerPrefs.SetString("death_cause", "Enemies reached the top");
             GameState.Instance.GameLost();
         }
     }
