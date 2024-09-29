@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Cysharp.Threading.Tasks;
+using UnityEngine;
 
 namespace Lemurs.Enemies
 {
@@ -11,6 +12,11 @@ namespace Lemurs.Enemies
 	{
 		[SerializeField]
 		private int health;
+
+		[SerializeField]
+		private EnemyMovement movement;
+
+		public int Health => health;
 		
 		private IEnemyStatsSettings _settings;
 
@@ -23,6 +29,11 @@ namespace Lemurs.Enemies
 		public void Damage(int damage)
 		{
 			health -= damage;
+		}
+
+		public void Slowdown()
+		{
+			movement.Slowdown();
 		}
 
 		public void ResetHealth()

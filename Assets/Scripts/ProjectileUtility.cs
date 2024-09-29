@@ -21,7 +21,7 @@ public class ProjectileUtility : MonoBehaviour
         var enemyScript = other.gameObject.GetComponent<EnemySpawnable>();
         if(enemyScript != null)
         {
-            //enemyScript.Slowdown();
+            enemyScript.Slowdown();
             
             if (hitSFX.Count > 0)
             {

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Normal Enemy Settings
   m_EditorClassIdentifier: 
   <MovementSpeed>k__BackingField: 1
+  <SlowdownSpeed>k__BackingField: 0.5
   <MaxHealth>k__BackingField: 22
   <DistanceFromTree>k__BackingField: 0.1
   <TreeLayers>k__BackingField:

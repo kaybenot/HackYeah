@@ -1,9 +1,12 @@
+using System.Collections;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 namespace Lemurs.Enemies
 {
     public interface IEnemyMovementSettings
     {
+	    float SlowdownSpeed { get;}
 		float MovementSpeed { get; }
 		float DistanceFromTree { get; }
 		LayerMask TreeLayers { get; }	
@@ -17,6 +20,7 @@ namespace Lemurs.Enemies
 		private IEnemyMovementSettings _settings;
 
 		private Ray snapRay;
+		private bool slowed;
 		
 		public void Init(IEnemyMovementSettings settings)
 		{
@@ -27,16 +31,29 @@ namespace Lemurs.Enemies
 		{
 			var position = transform.position;
 
-			float dt = Time.deltaTime;
-			position.y += dt * _settings.MovementSpeed;
+			var dt = Time.deltaTime;
+			var moveSpeed = slowed ? _settings.SlowdownSpeed : _settings.MovementSpeed;
+			position.y += dt * moveSpeed;
 
-			float snapDistance = _settings.DistanceFromTree;
-			float detectionDistance = snapDistance + 1;
+			var snapDistance = _settings.DistanceFromTree;
+			var detectionDistance = snapDistance + 1;
 			snapRay = new Ray(
 				position + raycastOffset - detectionDistance * transform.forward, 
 				transform.forward);
 
 			transform.position = position;	
+		}
+
+		public void Slowdown()
+		{
+			slowed = true;
+			StartCoroutine(IStopSlowdown());
+		}
+
+		public IEnumerator IStopSlowdown()
+		{
+			yield return new WaitForSeconds(1f);
+			slowed = false;
 		}
 
         private void OnDrawGizmosSelected()
