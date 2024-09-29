@@ -35,6 +35,13 @@ public class Spawner : MonoBehaviour
             _currentWaveIndex++;
             yield return new WaitForSeconds(5f);
         }
+
+        while (_enemiesRemainingAlive > 0)
+        {
+            yield return new WaitForSeconds(1f);
+        }
+        
+        GameState.Instance.GameWon();
     }
 
     IEnumerator SpawnWave(Wave wave)
