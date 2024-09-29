@@ -69,8 +69,8 @@ public class Spawner : MonoBehaviour
     void SpawnEnemy()
     {
         float angle = Random.Range(0, 360);
-        var spawnPoint = Quaternion.AngleAxis(angle, Vector3.up) * Vector3.right * spawnRadius;
-        var enemy = Instantiate(enemyPrefab, spawnPoint, Quaternion.AngleAxis(angle, Vector3.down));
+        var spawnPoint = Quaternion.AngleAxis(angle, Vector3.up) * Vector3.back * spawnRadius;
+        var enemy = Instantiate(enemyPrefab, spawnPoint, Quaternion.AngleAxis(angle, Vector3.up));
         enemy.OnDeath += OnEnemyDeath;
     }
 
