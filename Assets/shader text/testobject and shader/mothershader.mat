@@ -67,9 +67,9 @@ Material:
     - _QueueOffset: 0
     - _shadowstep: -0.3
     m_Colors:
-    - _maincolor: {r: 0.08679241, g: 0.08679241, b: 0.05485935, a: 0}
+    - _maincolor: {r: 1, g: 1, b: 1, a: 0}
     - _shadow_textur_tilling: {r: -5.09, g: -3.9, b: 0, a: 0}
-    - _shadowcolor: {r: 0.98490566, g: 0.83809894, b: 0.83809894, a: 1}
-    - _shadowpatterncolor: {r: 0.81886786, g: 0.6906301, b: 0.6906301, a: 0}
+    - _shadowcolor: {r: 1, g: 1, b: 1, a: 1}
+    - _shadowpatterncolor: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
