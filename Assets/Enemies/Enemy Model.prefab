@@ -298,7 +298,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ec28639352f641c4ea3674f4e6e96d78, type: 2}
+  - {fileID: 2100000, guid: d485a2c2b5f95704fb76bd7e50e2547d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -449,7 +449,7 @@ PrefabInstance:
     - target: {fileID: 5810943228305063256, guid: a153132bd1368724c84b67c53cc51931, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: ec28639352f641c4ea3674f4e6e96d78, type: 2}
+      objectReference: {fileID: 2100000, guid: 7bbcef73c437ef74e947f44621ad7223, type: 2}
     - target: {fileID: 7765313115942145030, guid: a153132bd1368724c84b67c53cc51931, type: 3}
       propertyPath: m_Name
       value: Right Arm
@@ -545,7 +545,7 @@ PrefabInstance:
     - target: {fileID: 4292741419065704743, guid: 5507bcbc6cc59bd419a82320bf46b79f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: ec28639352f641c4ea3674f4e6e96d78, type: 2}
+      objectReference: {fileID: 2100000, guid: 7bbcef73c437ef74e947f44621ad7223, type: 2}
     - target: {fileID: 4683690752170764059, guid: 5507bcbc6cc59bd419a82320bf46b79f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -641,7 +641,7 @@ PrefabInstance:
     - target: {fileID: 4292741419065704743, guid: 5507bcbc6cc59bd419a82320bf46b79f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: ec28639352f641c4ea3674f4e6e96d78, type: 2}
+      objectReference: {fileID: 2100000, guid: 7bbcef73c437ef74e947f44621ad7223, type: 2}
     - target: {fileID: 4683690752170764059, guid: 5507bcbc6cc59bd419a82320bf46b79f, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -737,7 +737,7 @@ PrefabInstance:
     - target: {fileID: 5810943228305063256, guid: a153132bd1368724c84b67c53cc51931, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: ec28639352f641c4ea3674f4e6e96d78, type: 2}
+      objectReference: {fileID: 2100000, guid: 7bbcef73c437ef74e947f44621ad7223, type: 2}
     - target: {fileID: 7765313115942145030, guid: a153132bd1368724c84b67c53cc51931, type: 3}
       propertyPath: m_Name
       value: Left Arm
