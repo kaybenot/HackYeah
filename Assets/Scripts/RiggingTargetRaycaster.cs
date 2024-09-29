@@ -85,7 +85,7 @@ public class RiggingTargetRaycaster : MonoBehaviour
 	private void OnDrawGizmos()
 	{
 		Gizmos.color = Color.yellow;
-		Gizmos.DrawRay(ray);
+		Gizmos.DrawRay(transform.position, transform.forward);
 		if (hitInfo.collider)
 			Gizmos.DrawSphere(hitInfo.point, 0.05f);
 

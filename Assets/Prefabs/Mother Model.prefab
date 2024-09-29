@@ -466,6 +466,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.419
       objectReference: {fileID: 0}
+    - target: {fileID: 2915189908541958472, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3389326072338960130, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
       propertyPath: constraint
       value: 
@@ -514,6 +518,10 @@ PrefabInstance:
       propertyPath: constraint
       value: 
       objectReference: {fileID: 3859239203316996172}
+    - target: {fileID: 7345131871466914383, guid: 78ab8b5f3e72db841b5deecbd845e419, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
