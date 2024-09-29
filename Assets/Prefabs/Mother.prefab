@@ -46,10 +46,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c5b819c763b85a4d8da7ad81db45577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TopScreenOffset: 0.15
+  TopScreenOffset: 0.3
   treeLayerMask:
     serializedVersion: 2
     m_Bits: 512
+  distanceFromTree: 0.35
+  movementSmoothingValue: 0.5
 --- !u!114 &2166153592198256425
 MonoBehaviour:
   m_ObjectHideFlags: 0
