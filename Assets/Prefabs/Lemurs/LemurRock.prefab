@@ -255,6 +255,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2300317646415011571}
     m_Modifications:
+    - target: {fileID: 1271267862235135341, guid: 0468e73985d6fc94abd16336d74e5134, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f45fe20244c81d847bd88f7cf2a83868, type: 2}
+    - target: {fileID: 4366225267692938313, guid: 0468e73985d6fc94abd16336d74e5134, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 90b516f50adf9134ea452906cb5781a6, type: 2}
     - target: {fileID: 6294871362857630984, guid: 0468e73985d6fc94abd16336d74e5134, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -299,6 +307,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: LemurRigGinger
       objectReference: {fileID: 0}
+    - target: {fileID: 6789915496458541556, guid: 0468e73985d6fc94abd16336d74e5134, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 90b516f50adf9134ea452906cb5781a6, type: 2}
+    - target: {fileID: 6789915496458541556, guid: 0468e73985d6fc94abd16336d74e5134, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f45fe20244c81d847bd88f7cf2a83868, type: 2}
+    - target: {fileID: 6789915496458541556, guid: 0468e73985d6fc94abd16336d74e5134, type: 3}
+      propertyPath: 'm_Materials.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 47b31c9a9c244894eb0c9c1410e3169e, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
