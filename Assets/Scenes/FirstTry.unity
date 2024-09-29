@@ -25255,14 +25255,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4684281557619834008, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
-      propertyPath: maxY
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 4684281557619834008, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
-      propertyPath: minY
-      value: -46
-      objectReference: {fileID: 0}
     - target: {fileID: 8840298549072629591, guid: 3989d8932ceb3504a896d07ddaa87826, type: 3}
       propertyPath: Target.TrackingTarget
       value: 
@@ -41944,6 +41936,10 @@ PrefabInstance:
     - target: {fileID: 4845084597919020329, guid: 593d31663c8e86040bac04a21f14592e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6554220078188410201, guid: 593d31663c8e86040bac04a21f14592e, type: 3}
+      propertyPath: spawnRadius
+      value: 10.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
