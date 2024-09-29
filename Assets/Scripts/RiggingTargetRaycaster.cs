@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Animations.Rigging;
 
@@ -6,7 +7,10 @@ public class RiggingTargetRaycaster : MonoBehaviour
 	[SerializeField]
 	private TwoBoneIKConstraint constraint;
 	[SerializeField]
-	private Vector3 initialTargetOffset; 
+	private Vector3 initialTargetOffset;
+
+	[SerializeField]
+	private List<AudioClip> stepSFX;
 
 	[Header("Surface Detection")]
 	[SerializeField]
@@ -30,6 +34,7 @@ public class RiggingTargetRaycaster : MonoBehaviour
 
 	private Ray ray;
 	private RaycastHit hitInfo;
+	private bool stepped;
 
 	[Header("States")]
 	[SerializeField]
@@ -72,8 +77,21 @@ public class RiggingTargetRaycaster : MonoBehaviour
 
 	private void UpdateMovement(float dt)
 	{
-		float moveDistance = dt * movementSpeed;
+		var moveDistance = dt * movementSpeed;
 		target.position = Vector3.MoveTowards(target.position, targetPosition, moveDistance);
+
+		if (target.position == targetPosition && !stepped)
+		{
+			stepped = true;
+			if (stepSFX.Count > 0)
+			{
+				AudioSource.PlayClipAtPoint(stepSFX[Random.Range(0, stepSFX.Count)], transform.position);
+			}
+		}
+		else if (target.position != targetPosition)
+		{
+			stepped = false;
+		}
 	}
 
 	private void OnDisable()
