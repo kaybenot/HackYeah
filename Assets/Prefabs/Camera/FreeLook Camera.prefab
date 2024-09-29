@@ -185,10 +185,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7dc001f06e370a488e3c8e39189757f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraSpeedX: 100
-  cameraSpeedY: 2
-  maxY: 29
-  minY: 8
+  cameraSpeedX: 50
+  cameraSpeedY: 10
+  maxY: 82
+  minY: 4
   orbitalFollow: {fileID: 2900140133982833905}
   hardLookAt: {fileID: 1634455202519187309}
 --- !u!114 &8861721519193340512
