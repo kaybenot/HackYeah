@@ -14,8 +14,9 @@ public class Spawner : MonoBehaviour
 {
     public EnemySpawnable enemyPrefab;
     public Wave[] waves;
-    public Transform[] spawnPoints;
     public float timeBetweenWaves = 2f;
+    public float spawnRadius;
+    
     private int _currentWaveIndex;
     private int _enemiesRemainingToSpawn;
     private int _enemiesRemainingAlive;
@@ -67,8 +68,9 @@ public class Spawner : MonoBehaviour
 
     void SpawnEnemy()
     {
-        Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-		var enemy = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
+        float angle = Random.Range(0, 360);
+        var spawnPoint = Quaternion.AngleAxis(angle, Vector3.up) * Vector3.right;
+        var enemy = Instantiate(enemyPrefab, spawnPoint, Quaternion.AngleAxis(angle, Vector3.down));
         enemy.OnDeath += OnEnemyDeath;
     }
 
