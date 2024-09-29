@@ -81,6 +81,7 @@ public class Mother : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
+            PlayerPrefs.SetString("death_cause", "They got you");
             OnMotherHit?.Invoke();
             GameState.Instance.GameLost();
         }
