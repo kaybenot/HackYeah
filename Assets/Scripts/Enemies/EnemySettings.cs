@@ -7,6 +7,9 @@ namespace Lemurs.Enemies
 	{
 		[field: SerializeField]
 		public float MovementSpeed { get; set; }
+		
+		[field: SerializeField]
+		public float SlowdownSpeed { get; set; }
 
 		[field: SerializeField]
 		public int MaxHealth { get; set; }

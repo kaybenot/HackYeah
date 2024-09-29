@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 public class ProjectileSingle : MonoBehaviour
 {
     public List<AudioClip> hitSFX;
-    public float damage = 10f;
+    public int damage = 10;
     public float selfDestructTime = 5f;
 
     private void Start()
@@ -22,7 +22,7 @@ public class ProjectileSingle : MonoBehaviour
         var enemyScript = other.gameObject.GetComponent<EnemySpawnable>();
         if(enemyScript != null)
         {
-            //enemyScript.DealDamage(damage);
+            enemyScript.DealDamage(damage);
             
             if (hitSFX.Count > 0)
             {

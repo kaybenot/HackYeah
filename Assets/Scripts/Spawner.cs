@@ -65,7 +65,7 @@ public class Spawner : MonoBehaviour
         enemy.OnDeath += OnEnemyDeath;
     }
 
-    void OnEnemyDeath(object sender, EventArgs e)
+    void OnEnemyDeath()
     {
         _enemiesRemainingAlive--;
     }

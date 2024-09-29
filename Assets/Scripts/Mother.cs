@@ -70,7 +70,6 @@ public class Mother : MonoBehaviour
         var forward = transform.position - previousPosition;
         if (forward.sqrMagnitude > 0.0001f)
         {
-            Debug.Log(previousPosition);
             targetRotation = Quaternion.LookRotation(forward, target.Value.normal);
             previousPosition = transform.position;
         }
@@ -83,6 +82,7 @@ public class Mother : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             OnMotherHit?.Invoke();
+            GameState.Instance.GameLost();
         }
     }
 }
