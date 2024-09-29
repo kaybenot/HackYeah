@@ -1,4 +1,5 @@
 using System;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class Mother : MonoBehaviour
@@ -8,10 +9,14 @@ public class Mother : MonoBehaviour
     [SerializeField] private LayerMask treeLayerMask;
     [SerializeField] private float distanceFromTree;
     [SerializeField, Range(0f, 1f)] private float movementSmoothingValue = 0.5f;
+    [SerializeField] private float rotationSpeed;
 
     public Action OnMotherHit;
     
     private Camera cam;
+
+    private Vector3 previousPosition;
+    private Quaternion targetRotation;
 
     private void Awake()
     {
@@ -24,6 +29,9 @@ public class Mother : MonoBehaviour
 
     private void Start()
     {
+        previousPosition = transform.position;
+        targetRotation = transform.rotation;
+
         var target = GetMotherTarget();
         if (target != null)
             Teleport(target.Value.point, target.Value.normal);
@@ -54,8 +62,20 @@ public class Mother : MonoBehaviour
     private void FixedUpdate()
     {
         var target = GetMotherTarget();
-        if (target != null)
-            MoveTo(target.Value.point, target.Value.normal);
+        if (target == null)
+            return;
+
+        MoveTo(target.Value.point, target.Value.normal);
+
+        var forward = transform.position - previousPosition;
+        if (forward.sqrMagnitude > 0.0001f)
+        {
+            Debug.Log(previousPosition);
+            targetRotation = Quaternion.LookRotation(forward, target.Value.normal);
+            previousPosition = transform.position;
+        }
+
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed);
     }
 
     private void OnTriggerEnter(Collider other)
