@@ -9,7 +9,7 @@ public class Lemur : MonoBehaviour
     public float fireRate;
     public GameObject projectile;
     public float projectileSpeed;
-    //public Transform firePoint;
+    public Transform firePoint;
     public BoxCollider[] targettingColliders;
     private float _lastFireTime;
     private Animator animator;
@@ -54,10 +54,10 @@ public class Lemur : MonoBehaviour
     private void Fire(Vector3 target)
     {
         // Calculate direction to the target
-        Vector3 direction = (target - transform.position).normalized;
+        Vector3 direction = (target - firePoint.position).normalized;
 
         // Instantiate the projectile
-        GameObject newProjectile = Instantiate(projectile, transform.position, Quaternion.LookRotation(direction));
+        GameObject newProjectile = Instantiate(projectile, firePoint.position, Quaternion.LookRotation(direction));
 
         // Set the velocity of the projectile
         newProjectile.GetComponent<Rigidbody>().linearVelocity = direction * projectileSpeed;

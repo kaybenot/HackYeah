@@ -51,8 +51,39 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.9900279, y: 7.0343914, z: 1}
-  m_Center: {x: 1.016628, y: -3.0171957, z: -0.0000052569094}
+  m_Size: {x: 4.0805807, y: 12.474207, z: 3.9432006}
+  m_Center: {x: 2.0619159, y: -5.7371035, z: -0.05092551}
+--- !u!1 &2189740249079413800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1641362669999744636}
+  m_Layer: 0
+  m_Name: ThrowPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1641362669999744636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2189740249079413800}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.344, y: 1.149, z: 1.183}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2300317646415011571}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3393595487131282956
 GameObject:
   m_ObjectHideFlags: 0
@@ -78,7 +109,7 @@ Transform:
   m_GameObject: {fileID: 3393595487131282956}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -137,8 +168,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.9900279, y: 7.0343914, z: 1}
-  m_Center: {x: -1.0166276, y: -3.0171957, z: -0.0000052569094}
+  m_Size: {x: 3.4893742, y: 12.261478, z: 3.7258143}
+  m_Center: {x: -1.7662795, y: -5.630739, z: 0.16762276}
 --- !u!1 &7538115606614290917
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,6 +203,7 @@ Transform:
   m_Children:
   - {fileID: 4933465341264077391}
   - {fileID: 7390034966340898221}
+  - {fileID: 1641362669999744636}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &8002348022127173698
@@ -211,6 +243,7 @@ MonoBehaviour:
   fireRate: 2
   projectile: {fileID: 770452048522834391, guid: a57aa3f295bf2e941b57dd1e6a9f2afe, type: 3}
   projectileSpeed: 3
+  firePoint: {fileID: 1641362669999744636}
   targettingColliders:
   - {fileID: 1677586842719941967}
   - {fileID: 96498379769555532}
@@ -232,7 +265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6294871362857630984, guid: 0468e73985d6fc94abd16336d74e5134, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.12
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 6294871362857630984, guid: 0468e73985d6fc94abd16336d74e5134, type: 3}
       propertyPath: m_LocalRotation.w

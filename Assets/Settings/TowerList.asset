@@ -15,17 +15,17 @@ MonoBehaviour:
   Towers:
   - Sequence:
       ButtonList: 00000000010000000200000003000000
-    TowerPrefab: {fileID: 7538115606614290917, guid: 8b7b4632b384ffe40ab65f2bfcdeb470, type: 3}
+    TowerPrefab: {fileID: 7538115606614290917, guid: 54385864c1f1f9741aad39555ff9b140, type: 3}
     SpawnCooldown: 3
   - Sequence:
       ButtonList: 01000000010000000200000003000000
-    TowerPrefab: {fileID: 4494007061550288458, guid: 987d2622b47ed3e4ca986e7a914430aa, type: 3}
+    TowerPrefab: {fileID: 7538115606614290917, guid: e88afb4966a648c42b5721cdfecd6a74, type: 3}
     SpawnCooldown: 3
   - Sequence:
       ButtonList: 02000000010000000200000003000000
-    TowerPrefab: {fileID: 8558633391000071538, guid: ec11abdc9f4eb594f981954c6121f824, type: 3}
+    TowerPrefab: {fileID: 7538115606614290917, guid: f0e8507151e45b748a116e8a74b0172d, type: 3}
     SpawnCooldown: 3
   - Sequence:
       ButtonList: 03000000000000000200000003000000
-    TowerPrefab: {fileID: 7538115606614290917, guid: 54385864c1f1f9741aad39555ff9b140, type: 3}
+    TowerPrefab: {fileID: 7538115606614290917, guid: c0b5e122fb747b74c87d196a063c4e47, type: 3}
     SpawnCooldown: 3
